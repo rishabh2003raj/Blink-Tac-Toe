@@ -1,0 +1,62 @@
+/* src/components/Cell.css */
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #3f51b5; /* Indigo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2.5rem;
+  transition: background-color 0.2s ease-in-out;
+  color: #333;
+  position: relative; /* For animations */
+}
+
+.cell:hover {
+  background-color: #e8eaf6; /* Light indigo */
+}
+
+.cell.winning {
+  background-color: #a5d6a7; /* Light green */
+  border-color: #4caf50; /* Green */
+}
+
+.cell .emoji {
+  display: inline-block;
+  transform-origin: center;
+}
+
+.new-emoji {
+  animation: popIn 0.3s ease-out;
+}
+
+.vanishing-emoji {
+  animation: popOut 0.3s ease-in forwards;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  70% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes popOut {
+  0% { transform: scale(1); opacity: 1; }
+  30% { transform: scale(1.1); }
+  100% { transform: scale(0.5); opacity: 0; }
+}
+
+
+/* Player specific styling can be added if needed */
+/* .cell.player1 { color: #ff9800; } */
+/* .cell.player2 { color: #2196f3; } */
+
+@media (max-width: 600px) {
+  .cell {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+}

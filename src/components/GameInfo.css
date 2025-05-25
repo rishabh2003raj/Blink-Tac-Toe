@@ -1,0 +1,48 @@
+/* src/components/GameInfo.css */
+.game-info {
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #e8eaf6; /* Light Indigo */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.status {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #3f51b5; /* Indigo */
+  margin-bottom: 10px;
+}
+
+.score-board {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.restart-btn, .help-btn {
+  background-color: #ff9800; /* Orange */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+.restart-btn:hover {
+  background-color: #f57c00; /* Darker Orange */
+}
+.help-btn {
+    background-color: #607d8b; /* Blue Grey */
+}
+.help-btn:hover {
+    background-color: #546e7a;
+}

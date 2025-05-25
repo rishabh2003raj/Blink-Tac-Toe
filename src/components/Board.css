@@ -1,0 +1,21 @@
+/* src/components/Board.css */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); /* Ensure square cells if width/height of cell is not fixed */
+  gap: 5px;
+  width: 310px; /* (100px cell + 2*2px border) * 3 + 2*5px gap ~ approx */
+  height: 310px;
+  margin: 20px auto;
+  background-color: #c5cae9; /* Lighter Indigo */
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .board {
+    width: 250px; /* (80px cell + 2*2px border) * 3 + 2*5px gap ~ approx */
+    height: 250px;
+  }
+}
