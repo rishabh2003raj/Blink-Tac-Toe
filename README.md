@@ -4,6 +4,9 @@ A fun and animated twist on the classic Tic Tac Toe — now with emoji battles, 
 
 ---
 
+# ✨ Deployed Link ✨
+https://blink-tac-toe-2iw5.onrender.com
+
 ## 🚀 Tech Stack
 
 - **React** (with functional components and hooks)
